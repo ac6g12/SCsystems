@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353104238637" org.eventb.texttools.text_representation="machine mac1 sees ctxAmbulance ctxHospital&#10;variables incident ambulance hospital incidentLevel incidentCapabilityRequirements&#10;&#9;&#9;   ambulanceAllocation hospitalAdmission&#10;invariants&#10;&#9;@inv1&#9;incident ⊆ INCIDENT&#10;&#9;@inv2&#9;ambulance ⊆ AMBULANCE&#10;&#9;@inv3&#9;hospital ⊆ HOSPITAL&#10;&#9;@inv4 &#9;incidentLevel ∈ incident→LEVEL&#10;  &#9;@inv5 &#9;incidentCapabilityRequirements ∈ incident→ℙ1(CAPABILITY)&#10;  &#9;@inv6&#9;ambulanceAllocation ∈ ambulance ⤔ incident&#10;  &#9;@inv7&#9;hospitalAdmission ∈ incident ⇸ hospital&#10;&#10;events&#10;  event INITIALISATION&#10;  &#9;then&#13;&#9;&#9;@act1 &#9;incident ≔ ∅&#10;&#9;&#9;@act2 &#9;ambulance ≔ ∅&#10;&#9;&#9;@act3&#9;hospital ≔ ∅&#10;&#9;&#9;@act4 &#9;incidentLevel ≔ ∅&#10;&#9;&#9;@act5&#9;incidentCapabilityRequirements ≔ ∅&#10;&#9;&#9;@act6 &#9;ambulanceAllocation ≔ ∅&#10;&#9;&#9;@act7&#9;hospitalAdmission ≔ ∅&#10;  end&#10;&#10;  event logIncident&#10;  &#9;any i l cs&#10;  &#9;where&#13;&#9;&#9;@grd1&#9;i ∈ INCIDENT ∖ incident&#10;&#9;&#9;@grd2&#9;l ∈ LEVEL&#10;&#9;&#9;@grd3&#9;cs ∈ ℙ1(CAPABILITY)&#10;&#9;&#9;@grd4&#9;ambulance ≠ ∅ ∧ hospital ≠ ∅&#10;&#9;then&#10;&#9;&#9;@act1&#9;incident ≔ incident ∪ {i}&#10;&#9;&#9;@act2&#9;incidentLevel(i) ≔ l&#10;&#9;&#9;@act3&#9;incidentCapabilityRequirements(i) ≔ cs&#10;  end&#10;&#10;  event allocateAmbulanceToIncident&#10;  &#9;any i a allocatable&#10;  &#9;where&#10;  &#9;&#9;&#9;@grd1&#9;allocatable = {inc ∣ inc ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission)) ∧&#10;  &#9;&#9;&#9;&#9;&#9;&#9;&#9;card(incidentCapabilityRequirements(inc)) ∗ 2&#10;  &#9;&#9;&#9;&#9;&#9;&#9;&#9;≤ (card(ambulanceCapabilities(a) ∩ incidentCapabilityRequirements(inc)) ∗ 3)}&#10;  &#9;&#9;&#9;@grd2 &#9;a ∈ ambulance ∖ dom(ambulanceAllocation) // ambulance must be available&#10;  &#9;&#9;&#9;@grd3&#9;i ∈ allocatable&#10;  &#9;&#9;&#9;@grd4&#9;∀inc · inc ∈ allocatable ⇒ incidentLevel(i) ≥ incidentLevel(inc)&#10;//  &#9;&#9;@grd1 &#9;i ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission)) //&#9;incident not allocated or processed&#10;//  &#9;&#9;@grd2 &#9;a ∈ ambulance ∖ dom(ambulanceAllocation) // ambulance must be available&#10;//  &#9;&#9;@grd3&#9;∀inc · inc ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission))&#10;// &#9;&#9;&#9;&#9;⇒ incidentLevel(i) ≥ incidentLevel(inc) ∧ incidentCapabilityRequirements(i) ⊆ ambulanceCapabilities(a)&#10;//  &#9;&#9;@grd4&#9;card(incidentCapabilityRequirements(i)) ∗ 2&#10;//  &#9;&#9;&#9;&#9;≤ (card(ambulanceCapabilities(a) ∩ incidentCapabilityRequirements(i)) ∗ 3)&#10;  &#9;then&#10;  &#9;&#9;@act1&#9;ambulanceAllocation(a) ≔ i&#10;  end&#10;&#10;  event allocateIncidentToHospital&#10;  &#9;any i h&#10;  &#9;where&#13;&#9;&#9;@grd1 &#9;i ∈ ran(ambulanceAllocation) ∖ dom(hospitalAdmission)&#10;&#9;&#9;@grd2 &#9;h ∈ hospital&#10;&#9;then&#10;&#9;&#9;@act1&#9;hospitalAdmission(i) ≔ h&#10;  end&#10;&#10;  event transportToHospital&#10;  &#9;any i&#10;  &#9;where&#10;  &#9;&#9;@grd1&#9;i ∈ ran(ambulanceAllocation) ∩ dom(hospitalAdmission)&#10;  &#9;then&#10;  &#9;&#9;@act1&#9;ambulanceAllocation ≔  ambulanceAllocation ⩥ {i}&#10;  end&#10;&#10;  event addAmbulance&#10;  &#9;any a&#10;  &#9;where&#13;&#9;&#9;@grd1 &#9;a ∈ AMBULANCE ∖ ambulance&#10;&#9;then&#10;&#9;&#9;@act1 &#9;ambulance ≔ ambulance ∪ {a}&#10;  end&#10;&#10;  event addHospital&#10;  &#9;any h&#10;  &#9;where&#13;&#9;&#9;@grd1 &#9;h ∈ HOSPITAL ∖ hospital&#10;&#9;then&#13;&#9;&#9;@act1 hospital ≔ hospital ∪ {h}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_ANT9QDAzEeKxl_72wEg6Ag" org.eventb.core.target="ctxAmbulance"/>
+<org.eventb.core.seesContext name="_ANT9QTAzEeKxl_72wEg6Ag" org.eventb.core.target="ctxHospital"/>
+<org.eventb.core.variable name="_I09oATAREeKxl_72wEg6Ag" org.eventb.core.identifier="incident"/>
+<org.eventb.core.variable name="_I09oAjAREeKxl_72wEg6Ag" org.eventb.core.identifier="ambulance"/>
+<org.eventb.core.variable name="_I09oAzAREeKxl_72wEg6Ag" org.eventb.core.identifier="hospital"/>
+<org.eventb.core.variable name="_Ie2YojASEeKxl_72wEg6Ag" org.eventb.core.identifier="incidentLevel"/>
+<org.eventb.core.variable name="_Ie2YozASEeKxl_72wEg6Ag" org.eventb.core.identifier="incidentCapabilityRequirements"/>
+<org.eventb.core.variable name="_5IufADAYEeKxl_72wEg6Ag" org.eventb.core.identifier="ambulanceAllocation"/>
+<org.eventb.core.variable name="_5IufATAYEeKxl_72wEg6Ag" org.eventb.core.identifier="hospitalAdmission"/>
+<org.eventb.core.invariant name="_I1Gx8DAREeKxl_72wEg6Ag" org.eventb.core.label="inv1" org.eventb.core.predicate="incident ⊆ INCIDENT"/>
+<org.eventb.core.invariant name="_I1Gx8TAREeKxl_72wEg6Ag" org.eventb.core.label="inv2" org.eventb.core.predicate="ambulance ⊆ AMBULANCE"/>
+<org.eventb.core.invariant name="_I1Gx8jAREeKxl_72wEg6Ag" org.eventb.core.label="inv3" org.eventb.core.predicate="hospital ⊆ HOSPITAL"/>
+<org.eventb.core.invariant name="_Ie2YpDASEeKxl_72wEg6Ag" org.eventb.core.label="inv4" org.eventb.core.predicate="incidentLevel ∈ incident→LEVEL"/>
+<org.eventb.core.invariant name="_Ie2YpTASEeKxl_72wEg6Ag" org.eventb.core.label="inv5" org.eventb.core.predicate="incidentCapabilityRequirements ∈ incident→ℙ1(CAPABILITY)"/>
+<org.eventb.core.invariant name="_5IufAjAYEeKxl_72wEg6Ag" org.eventb.core.label="inv6" org.eventb.core.predicate="ambulanceAllocation ∈ ambulance ⤔ incident"/>
+<org.eventb.core.invariant name="_LoJnsjAZEeKxl_72wEg6Ag" org.eventb.core.label="inv7" org.eventb.core.predicate="hospitalAdmission ∈ incident ⇸ hospital"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_I1Gx8zAREeKxl_72wEg6Ag" org.eventb.core.assignment="incident ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_I1Gx9DAREeKxl_72wEg6Ag" org.eventb.core.assignment="ambulance ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_I1Gx9TAREeKxl_72wEg6Ag" org.eventb.core.assignment="hospital ≔ ∅" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_P09qkDASEeKxl_72wEg6Ag" org.eventb.core.assignment="incidentLevel ≔ ∅" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="_P09qkTASEeKxl_72wEg6Ag" org.eventb.core.assignment="incidentCapabilityRequirements ≔ ∅" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="_U42XADAZEeKxl_72wEg6Ag" org.eventb.core.assignment="ambulanceAllocation ≔ ∅" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="_U42XATAZEeKxl_72wEg6Ag" org.eventb.core.assignment="hospitalAdmission ≔ ∅" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_FkuUYjATEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="logIncident">
+<org.eventb.core.parameter name="_FkuUYzATEeKxl_72wEg6Ag" org.eventb.core.identifier="i"/>
+<org.eventb.core.parameter name="_FkuUZDATEeKxl_72wEg6Ag" org.eventb.core.identifier="l"/>
+<org.eventb.core.parameter name="_FkuUZTATEeKxl_72wEg6Ag" org.eventb.core.identifier="cs"/>
+<org.eventb.core.guard name="_FkuUZjATEeKxl_72wEg6Ag" org.eventb.core.label="grd1" org.eventb.core.predicate="i ∈ INCIDENT ∖ incident"/>
+<org.eventb.core.guard name="_FkuUZzATEeKxl_72wEg6Ag" org.eventb.core.label="grd2" org.eventb.core.predicate="l ∈ LEVEL"/>
+<org.eventb.core.guard name="_FkuUaDATEeKxl_72wEg6Ag" org.eventb.core.label="grd3" org.eventb.core.predicate="cs ∈ ℙ1(CAPABILITY)"/>
+<org.eventb.core.guard name="_s3fJIDATEeKxl_72wEg6Ag" org.eventb.core.label="grd4" org.eventb.core.predicate="ambulance ≠ ∅ ∧ hospital ≠ ∅"/>
+<org.eventb.core.action name="_FkuUaTATEeKxl_72wEg6Ag" org.eventb.core.assignment="incident ≔ incident ∪ {i}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_Fk4FYDATEeKxl_72wEg6Ag" org.eventb.core.assignment="incidentLevel(i) ≔ l" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_Fk4FYTATEeKxl_72wEg6Ag" org.eventb.core.assignment="incidentCapabilityRequirements(i) ≔ cs" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_5IufAzAYEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="allocateAmbulanceToIncident">
+<org.eventb.core.parameter name="_5IufBDAYEeKxl_72wEg6Ag" org.eventb.core.identifier="i"/>
+<org.eventb.core.parameter name="_5IufBTAYEeKxl_72wEg6Ag" org.eventb.core.identifier="a"/>
+<org.eventb.core.parameter name="_ANT9QjAzEeKxl_72wEg6Ag" org.eventb.core.identifier="allocatable"/>
+<org.eventb.core.guard name="_5IufBjAYEeKxl_72wEg6Ag" org.eventb.core.label="grd1" org.eventb.core.predicate="allocatable = {inc ∣ inc ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission)) ∧&#10;  &#9;&#9;&#9;&#9;&#9;&#9;&#9;card(incidentCapabilityRequirements(inc)) ∗ 2&#10;  &#9;&#9;&#9;&#9;&#9;&#9;&#9;≤ (card(ambulanceCapabilities(a) ∩ incidentCapabilityRequirements(inc)) ∗ 3)}"/>
+<org.eventb.core.guard name="_4dRcUjAaEeKxl_72wEg6Ag" org.eventb.core.comment="ambulance must be available" org.eventb.core.label="grd2" org.eventb.core.predicate="a ∈ ambulance ∖ dom(ambulanceAllocation)"/>
+<org.eventb.core.guard name="_ANT9QzAzEeKxl_72wEg6Ag" org.eventb.core.label="grd3" org.eventb.core.predicate="i ∈ allocatable"/>
+<org.eventb.core.guard name="_ATH8QzAxEeKxl_72wEg6Ag" org.eventb.core.comment="&#9;&#9;@grd1 &#9;i ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission)) //&#9;incident not allocated or processed&#10;&#9;&#9;@grd2 &#9;a ∈ ambulance ∖ dom(ambulanceAllocation) // ambulance must be available&#10;&#9;&#9;@grd3&#9;∀inc · inc ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission))&#10;&#9;&#9;&#9;&#9;⇒ incidentLevel(i) ≥ incidentLevel(inc) ∧ incidentCapabilityRequirements(i) ⊆ ambulanceCapabilities(a)&#10;&#9;&#9;@grd4&#9;card(incidentCapabilityRequirements(i)) ∗ 2&#10;&#9;&#9;&#9;&#9;≤ (card(ambulanceCapabilities(a) ∩ incidentCapabilityRequirements(i)) ∗ 3)" org.eventb.core.label="grd4" org.eventb.core.predicate="∀inc · inc ∈ allocatable ⇒ incidentLevel(i) ≥ incidentLevel(inc)"/>
+<org.eventb.core.action name="_4dRcUzAaEeKxl_72wEg6Ag" org.eventb.core.assignment="ambulanceAllocation(a) ≔ i" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_u0g84jAbEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="allocateIncidentToHospital">
+<org.eventb.core.parameter name="_u0g84zAbEeKxl_72wEg6Ag" org.eventb.core.identifier="i"/>
+<org.eventb.core.parameter name="_u0g85DAbEeKxl_72wEg6Ag" org.eventb.core.identifier="h"/>
+<org.eventb.core.guard name="_u0g85TAbEeKxl_72wEg6Ag" org.eventb.core.label="grd1" org.eventb.core.predicate="i ∈ ran(ambulanceAllocation) ∖ dom(hospitalAdmission)"/>
+<org.eventb.core.guard name="_u0g85jAbEeKxl_72wEg6Ag" org.eventb.core.label="grd2" org.eventb.core.predicate="h ∈ hospital"/>
+<org.eventb.core.action name="_u0g85zAbEeKxl_72wEg6Ag" org.eventb.core.assignment="hospitalAdmission(i) ≔ h" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pb1ykDAcEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="transportToHospital">
+<org.eventb.core.parameter name="_pb1ykTAcEeKxl_72wEg6Ag" org.eventb.core.identifier="i"/>
+<org.eventb.core.guard name="_pb1ykjAcEeKxl_72wEg6Ag" org.eventb.core.label="grd1" org.eventb.core.predicate="i ∈ ran(ambulanceAllocation) ∩ dom(hospitalAdmission)"/>
+<org.eventb.core.action name="_pb1ykzAcEeKxl_72wEg6Ag" org.eventb.core.assignment="ambulanceAllocation ≔  ambulanceAllocation ⩥ {i}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_s3fJITATEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addAmbulance">
+<org.eventb.core.parameter name="_s3fJIjATEeKxl_72wEg6Ag" org.eventb.core.identifier="a"/>
+<org.eventb.core.guard name="_s3fJIzATEeKxl_72wEg6Ag" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ AMBULANCE ∖ ambulance"/>
+<org.eventb.core.action name="_s3fJJDATEeKxl_72wEg6Ag" org.eventb.core.assignment="ambulance ≔ ambulance ∪ {a}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_5NrpwDATEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="addHospital">
+<org.eventb.core.parameter name="_5NrpwTATEeKxl_72wEg6Ag" org.eventb.core.identifier="h"/>
+<org.eventb.core.guard name="_5NrpwjATEeKxl_72wEg6Ag" org.eventb.core.label="grd1" org.eventb.core.predicate="h ∈ HOSPITAL ∖ hospital"/>
+<org.eventb.core.action name="_AkGdsDAUEeKxl_72wEg6Ag" org.eventb.core.assignment="hospital ≔ hospital ∪ {h}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353177792769" org.eventb.texttools.text_representation="context ctxStatus&#10;constants Logged Allocated Attended Hospitalised&#10;sets&#9;INCIDENT_STATUS&#10;axioms&#10;&#9;@axm1 &#9;partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_Qk0ggDDeEeK1r57p0SSIEg" org.eventb.core.identifier="INCIDENT_STATUS"/>
+<org.eventb.core.constant name="_Qk0ggTDeEeK1r57p0SSIEg" org.eventb.core.identifier="Logged"/>
+<org.eventb.core.constant name="_Qk0ggjDeEeK1r57p0SSIEg" org.eventb.core.identifier="Allocated"/>
+<org.eventb.core.constant name="_Qk1HkDDeEeK1r57p0SSIEg" org.eventb.core.identifier="Attended"/>
+<org.eventb.core.constant name="_Qk1HkTDeEeK1r57p0SSIEg" org.eventb.core.identifier="Hospitalised"/>
+<org.eventb.core.axiom name="_Qk1HkjDeEeK1r57p0SSIEg" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
+</org.eventb.core.contextFile>

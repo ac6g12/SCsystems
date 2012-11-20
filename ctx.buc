@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353182875137" org.eventb.texttools.text_representation="context ctx&#10;&#10;constants LEVEL c1 c2 c3 QUEUE_THRESHOLD REDUCED_RESPONSE_PERCENTAGE_THRESHOLD&#10;&#9;&#9;   MIN_REDUCED_RESPONSE_CAPABILITIES&#10;&#10;sets AMBULANCE INCIDENT HOSPITAL CAPABILITY&#10;&#10;axioms&#10;  @axm1 LEVEL = 1‥5&#9;&#9;// emergency levels 1 to 5&#10;  @axm2&#9;partition(CAPABILITY,{c1},{c2},{c3})&#9;// medical capabilities modelled as an enum&#10;  @axm3 finite(CAPABILITY)&#10;  @axm4 QUEUE_THRESHOLD = 3  // warning when incidents waiting for allocation &gt;= 3&#10;  @axm5 REDUCED_RESPONSE_PERCENTAGE_THRESHOLD = 30&#10;  &#9;&#9;// warning should be triggered when more than 30%&#10;  &#9;&#9;// of all incident responses are reduced responses&#10;  @axm6 MIN_REDUCED_RESPONSE_CAPABILITIES = 60&#10;  &#9;&#9;// ambulances need to provide at least 60% of the&#10;  &#9;&#9;// incident medical capabilities requirements in order&#10;  &#9;&#9;// to be considered for a reduced response&#10;  &#9;&#9;// e.g. incident requires c1 and c3; ambulance provides c1 and c2&#10;  &#9;&#9;// -&gt; for this incident only c1 is relevant so it can provide 1&#10;  &#9;&#9;// of 2 capabilities required -&gt; 50% -&gt; NOT GOOD ENOUGH&#10;  @axm7&#9;finite(INCIDENT)&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_dMiJoTAHEeKxl_72wEg6Ag" org.eventb.core.identifier="AMBULANCE"/>
+<org.eventb.core.carrierSet name="_dMiJojAHEeKxl_72wEg6Ag" org.eventb.core.identifier="INCIDENT"/>
+<org.eventb.core.carrierSet name="_dMiJozAHEeKxl_72wEg6Ag" org.eventb.core.identifier="HOSPITAL"/>
+<org.eventb.core.carrierSet name="_48KngDAJEeKxl_72wEg6Ag" org.eventb.core.identifier="CAPABILITY"/>
+<org.eventb.core.constant name="_vAxK0DAIEeKxl_72wEg6Ag" org.eventb.core.identifier="LEVEL"/>
+<org.eventb.core.constant name="_vjdrYDAMEeKxl_72wEg6Ag" org.eventb.core.identifier="c1"/>
+<org.eventb.core.constant name="_vjdrYTAMEeKxl_72wEg6Ag" org.eventb.core.identifier="c2"/>
+<org.eventb.core.constant name="_vjdrYjAMEeKxl_72wEg6Ag" org.eventb.core.identifier="c3"/>
+<org.eventb.core.constant name="_ZhvUoDCQEeK8I7Jxlhc67g" org.eventb.core.identifier="QUEUE_THRESHOLD"/>
+<org.eventb.core.constant name="_jcxvgDCSEeK8I7Jxlhc67g" org.eventb.core.identifier="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD"/>
+<org.eventb.core.constant name="_gWI_oDCbEeK8I7Jxlhc67g" org.eventb.core.identifier="MIN_REDUCED_RESPONSE_CAPABILITIES"/>
+<org.eventb.core.axiom name="_3DXIQDAIEeKxl_72wEg6Ag" org.eventb.core.comment="emergency levels 1 to 5" org.eventb.core.label="axm1" org.eventb.core.predicate="LEVEL = 1‥5"/>
+<org.eventb.core.axiom name="_vjdrZTAMEeKxl_72wEg6Ag" org.eventb.core.comment="medical capabilities modelled as an enum" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(CAPABILITY,{c1},{c2},{c3})"/>
+<org.eventb.core.axiom name="_mjxDEDDpEeK1r57p0SSIEg" org.eventb.core.label="axm3" org.eventb.core.predicate="finite(CAPABILITY)"/>
+<org.eventb.core.axiom name="_ZhwiwDCQEeK8I7Jxlhc67g" org.eventb.core.comment="warning when incidents waiting for allocation &gt;= 3" org.eventb.core.label="axm4" org.eventb.core.predicate="QUEUE_THRESHOLD = 3"/>
+<org.eventb.core.axiom name="_jcy9oDCSEeK8I7Jxlhc67g" org.eventb.core.comment="warning should be triggered when more than 30%&#10;of all incident responses are reduced responses" org.eventb.core.label="axm5" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD = 30"/>
+<org.eventb.core.axiom name="_gWKNwDCbEeK8I7Jxlhc67g" org.eventb.core.comment="ambulances need to provide at least 60% of the&#10;incident medical capabilities requirements in order&#10;to be considered for a reduced response&#10;e.g. incident requires c1 and c3; ambulance provides c1 and c2&#10;-&gt; for this incident only c1 is relevant so it can provide 1&#10;of 2 capabilities required -&gt; 50% -&gt; NOT GOOD ENOUGH" org.eventb.core.label="axm6" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES = 60"/>
+<org.eventb.core.axiom name="_F6X5kDDqEeK1r57p0SSIEg" org.eventb.core.label="axm7" org.eventb.core.predicate="finite(INCIDENT)"/>
+</org.eventb.core.contextFile>

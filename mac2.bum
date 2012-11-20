@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353106343268" org.eventb.texttools.text_representation="machine mac2 refines mac1  sees ctxAmbulance ctxHospital&#10;&#10;variables incident ambulance hospital incidentLevel incidentCapabilityRequirements ambulanceAllocation hospitalAdmission&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  end&#10;&#10;  event logIncident extends logIncident&#10;  end&#10;&#10;  event fullResponseAllocation extends allocateAmbulanceToIncident&#10;  &#9;where&#10;  &#9;&#9;@grd5&#9;∃amb, alloc · (amb ∈ ambulance ∖ dom(ambulanceAllocation) ∧ alloc ∈ allocatable)&#10;  &#9;&#9;&#9;&#9;∧ incidentCapabilityRequirements(alloc) ⊆ ambulanceCapabilities(amb)&#10;  end&#10;&#10;  event reducedResponseAllocation extends allocateAmbulanceToIncident&#10;  &#9;where&#10;  &#9;&#9;@grd5&#9;∀amb, alloc · (amb ∈ ambulance ∖ dom(ambulanceAllocation) ∧ alloc ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission)))&#10;  &#9;&#9;&#9;&#9;⇒ ambulanceCapabilities(amb) ⊂ incidentCapabilityRequirements(alloc)&#10;  end&#10;&#10;  event allocateIncidentToHospital extends allocateIncidentToHospital&#10;  end&#10;&#10;  event transportToHospital extends transportToHospital&#10;  end&#10;&#10;  event addAmbulance extends addAmbulance&#10;  end&#10;&#10;  event addHospital extends addHospital&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_5xqWMDA3EeKxl_72wEg6Ag" org.eventb.core.target="mac1"/>
+<org.eventb.core.seesContext name="_5xqWMTA3EeKxl_72wEg6Ag" org.eventb.core.target="ctxAmbulance"/>
+<org.eventb.core.seesContext name="_5xqWMjA3EeKxl_72wEg6Ag" org.eventb.core.target="ctxHospital"/>
+<org.eventb.core.variable name="_I09oATAREeKxl_72wEg6Ag" org.eventb.core.identifier="incident"/>
+<org.eventb.core.variable name="_I09oAjAREeKxl_72wEg6Ag" org.eventb.core.identifier="ambulance"/>
+<org.eventb.core.variable name="_I09oAzAREeKxl_72wEg6Ag" org.eventb.core.identifier="hospital"/>
+<org.eventb.core.variable name="_Ie2YojASEeKxl_72wEg6Ag" org.eventb.core.identifier="incidentLevel"/>
+<org.eventb.core.variable name="_Ie2YozASEeKxl_72wEg6Ag" org.eventb.core.identifier="incidentCapabilityRequirements"/>
+<org.eventb.core.variable name="_5IufADAYEeKxl_72wEg6Ag" org.eventb.core.identifier="ambulanceAllocation"/>
+<org.eventb.core.variable name="_5IufATAYEeKxl_72wEg6Ag" org.eventb.core.identifier="hospitalAdmission"/>
+<org.eventb.core.event name="_QcyMoTAfEeKxl_72wEg6Ah" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="_QcyMoTAfEeKxl_72wEg6Ai" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="logIncident">
+<org.eventb.core.refinesEvent name="_5xqWMzA3EeKxl_72wEg6Ag" org.eventb.core.target="logIncident"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_lzS3MjAfEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fullResponseAllocation">
+<org.eventb.core.refinesEvent name="_5xqWNDA3EeKxl_72wEg6Ag" org.eventb.core.target="allocateAmbulanceToIncident"/>
+<org.eventb.core.guard name="_L6ufRTA2EeKxl_72wEg6Ag" org.eventb.core.label="grd5" org.eventb.core.predicate="∃amb, alloc · (amb ∈ ambulance ∖ dom(ambulanceAllocation) ∧ alloc ∈ allocatable)&#10;  &#9;&#9;&#9;&#9;∧ incidentCapabilityRequirements(alloc) ⊆ ambulanceCapabilities(amb)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_lzTeQTAfEeKxl_72wEg6Ag" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="reducedResponseAllocation">
+<org.eventb.core.refinesEvent name="_5xqWNTA3EeKxl_72wEg6Ag" org.eventb.core.target="allocateAmbulanceToIncident"/>
+<org.eventb.core.guard name="_JrFidjA3EeKxl_72wEg6Ag" org.eventb.core.label="grd5" org.eventb.core.predicate="∀amb, alloc · (amb ∈ ambulance ∖ dom(ambulanceAllocation) ∧ alloc ∈ incident ∖ (ran(ambulanceAllocation) ∪ dom(hospitalAdmission)))&#10;  &#9;&#9;&#9;&#9;⇒ ambulanceCapabilities(amb) ⊂ incidentCapabilityRequirements(alloc)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_QcyMoTAfEeKxl_72wEg6Ak" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="allocateIncidentToHospital">
+<org.eventb.core.refinesEvent name="_5xqWNjA3EeKxl_72wEg6Ag" org.eventb.core.target="allocateIncidentToHospital"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_QcyMoTAfEeKxl_72wEg6Al" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="transportToHospital">
+<org.eventb.core.refinesEvent name="_5xqWNzA3EeKxl_72wEg6Ag" org.eventb.core.target="transportToHospital"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_QcyMoTAfEeKxl_72wEg6Am" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="addAmbulance">
+<org.eventb.core.refinesEvent name="_5xqWODA3EeKxl_72wEg6Ag" org.eventb.core.target="addAmbulance"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_QcyMoTAfEeKxl_72wEg6An" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="addHospital">
+<org.eventb.core.refinesEvent name="_5xqWOTA3EeKxl_72wEg6Ag" org.eventb.core.target="addHospital"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

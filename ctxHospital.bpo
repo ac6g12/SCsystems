@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="AMBULANCE" org.eventb.core.type="ℙ(AMBULANCE)"/>
+<org.eventb.core.poIdentifier name="CAPABILITY" org.eventb.core.type="ℙ(CAPABILITY)"/>
+<org.eventb.core.poIdentifier name="HOSPITAL" org.eventb.core.type="ℙ(HOSPITAL)"/>
+<org.eventb.core.poIdentifier name="INCIDENT" org.eventb.core.type="ℙ(INCIDENT)"/>
+<org.eventb.core.poIdentifier name="LEVEL" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="MIN_REDUCED_RESPONSE_CAPABILITIES" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="QUEUE_THRESHOLD" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="c1" org.eventb.core.type="CAPABILITY"/>
+<org.eventb.core.poIdentifier name="c2" org.eventb.core.type="CAPABILITY"/>
+<org.eventb.core.poIdentifier name="c3" org.eventb.core.type="CAPABILITY"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLE" org.eventb.core.predicate="LEVEL=1 ‥ 5" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_3DXIQDAIEeKxl_72wEg6Ag"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLF" org.eventb.core.predicate="partition(CAPABILITY,{c1},{c2},{c3})" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_vjdrZTAMEeKxl_72wEg6Ag"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLG" org.eventb.core.predicate="finite(CAPABILITY)" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_mjxDEDDpEeK1r57p0SSIEg"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLH" org.eventb.core.predicate="QUEUE_THRESHOLD=3" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_ZhwiwDCQEeK8I7Jxlhc67g"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLI" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_jcy9oDCSEeK8I7Jxlhc67g"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLJ" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_gWKNwDCbEeK8I7Jxlhc67g"/>
+<org.eventb.core.poPredicate name="REDUCED_RESPONSE_PERCENTAGE_THRESHOLK" org.eventb.core.predicate="finite(INCIDENT)" org.eventb.core.source="/AmbulanceDispatch/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_F6X5kDDqEeK1r57p0SSIEg"/>
+<org.eventb.core.poIdentifier name="h1" org.eventb.core.type="HOSPITAL"/>
+<org.eventb.core.poIdentifier name="h2" org.eventb.core.type="HOSPITAL"/>
+<org.eventb.core.poIdentifier name="h3" org.eventb.core.type="HOSPITAL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AmbulanceDispatch/ctxHospital.bpo|org.eventb.core.poFile#ctxHospital|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})" org.eventb.core.source="/AmbulanceDispatch/ctxHospital.buc|org.eventb.core.contextFile#ctxHospital|org.eventb.core.axiom#_e_2AtjAPEeKxl_72wEg6Ag"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

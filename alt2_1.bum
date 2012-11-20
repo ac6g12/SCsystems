@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353183870874" org.eventb.texttools.text_representation="machine alt2_1 refines alt1  sees ctxAmbulance ctxHospital ctxStatus&#10;&#10;variables incident ambulance hospital incidentLevel incidentCapabilityRequirements ambulanceAllocation hospitalAllocation&#10;          reducedResponseCounter&#10;          /* reducedResponseCounter to monitor the system state&#10;             (workaround as using card() often causes problems with discharging proof obligations) */&#10;          incidentStatus&#10;&#10;// THIS REFINED MACHINE IMPLEMENTS THE WARNING AND REPORTING REQUIREMENTS&#10;&#10;invariants&#10;  @inv8 reducedResponseCounter ∈ ℕ&#10;  @inv9 incidentStatus ∈ incident → INCIDENT_STATUS&#10;  @int10 finite(incident)&#10;  @int11 finite(incidentStatus)&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @act8 reducedResponseCounter ≔ 0&#10;      @act9 incidentStatus ≔ ∅&#10;  end&#10;&#10;  event logIncident extends logIncident&#10;    then&#10;      @act4 incidentStatus(i) ≔  Logged&#10;  end&#10;&#10;  event fullResponseAllocation extends allocateAmbulanceToIncident&#10;    where&#10;      @grd6 incidentCapabilityRequirements(i) ⊆ ambulanceCapabilities(a)&#10;    then&#10;      @act2 incidentStatus(i) ≔ Allocated&#10;  end&#10;&#10;  event reducedResponseAllocation extends allocateAmbulanceToIncident&#10;    where&#10;      @grd6 ∀amb · (amb ∈ ambulance ∖ dom(ambulanceAllocation)&#10;            ⇒ ∀inc · (inc ∈ allocatable&#10;            ⇒ incidentCapabilityRequirements(inc) ⊈ ambulanceCapabilities(amb)))&#10;      /* only enable if there are no ambulances that could provide a full&#10;         response to any of the allocatable incidents */&#10;    then&#10;      @act2 incidentStatus(i) ≔ Allocated&#10;      @act3 reducedResponseCounter ≔  reducedResponseCounter + 1 // increment the reduced response counter&#10;  end&#10;&#10;  event allocateIncidentToHospital extends allocateIncidentToHospital&#10;  end&#10;&#10;  event REPORT_IncidentArrival&#10;    any a&#10;    where&#10;      @grd1 a ∈ dom(ambulanceAllocation) // must be an ambulance with an allocated incident&#10;      @grd2 incidentStatus(ambulanceAllocation(a)) = Allocated // ... that hasn't arrived yet&#10;    then&#10;      @act1 incidentStatus(ambulanceAllocation(a)) ≔ Attended // register arrival to the scene of the incident&#10;  end&#10;&#10;  event REPORT_HospitalArrival&#10;    any a&#10;    where&#10;      @grd1 a ∈ dom(ambulanceAllocation) // must be a currently allocated ambulance&#10;      @grd3 {a}◁(ambulanceAllocation;hospitalAllocation) ≠ ∅ // hospital must be allocated&#10;      @grd4 incidentStatus(ambulanceAllocation(a)) = Attended // not yet delivered to hospital&#10;    then&#10;      @act1 incidentStatus(ambulanceAllocation(a)) ≔ Hospitalised&#10;      /* @act1&#9;hospitalisedIncident ≔ hospitalisedIncident ∪ {ambulanceAllocation(a)}&#10;         register arrival to the allocated hospital */&#10;  end&#10;&#10;  event REPORT_AmbulanceBackAtBase extends setAmbulanceAvailable&#10;    where&#10;      @grd3 incidentStatus(ambulanceAllocation(a)) = Hospitalised&#10;      /* ambulance can only arrive back at its base when it has delivered&#10;         the patient (incident) to the allocated hospital&#10;         Arrival to the base makes the ambulance available for another allocation */&#10;  end&#10;&#10;  event WARNING_QueueThresholdReached // enabled when queue threshold reached&#10;    where&#10;      @grd1 card(incidentStatus ▷ {Logged}) ≥ QUEUE_THRESHOLD&#10;  end&#10;&#10;  event WARNING_ReducedResponseThresholdExceeded // enabled when reduced response threshold exceeded&#10;    where&#10;      @grd1 card(incidentStatus ⩥ {Logged}) ∗ REDUCED_RESPONSE_PERCENTAGE_THRESHOLD&#10;            &lt; reducedResponseCounter ∗ 100&#10;  end&#10;&#10;  event addAmbulance extends addAmbulance&#10;  end&#10;&#10;  event addHospital extends addHospital&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_aUuzADDsEeK1r57p0SSIEg" org.eventb.core.target="alt1"/>
+<org.eventb.core.seesContext name="_aUvaEDDsEeK1r57p0SSIEg" org.eventb.core.target="ctxAmbulance"/>
+<org.eventb.core.seesContext name="_aUvaETDsEeK1r57p0SSIEg" org.eventb.core.target="ctxHospital"/>
+<org.eventb.core.seesContext name="_aUvaEjDsEeK1r57p0SSIEg" org.eventb.core.target="ctxStatus"/>
+<org.eventb.core.variable name="_Tu9hQzDeEeK1r57p0SSIEg" org.eventb.core.identifier="incident"/>
+<org.eventb.core.variable name="_Tu9hRDDeEeK1r57p0SSIEg" org.eventb.core.identifier="ambulance"/>
+<org.eventb.core.variable name="_Tu9hRTDeEeK1r57p0SSIEg" org.eventb.core.identifier="hospital"/>
+<org.eventb.core.variable name="_Tu-IUDDeEeK1r57p0SSIEg" org.eventb.core.identifier="incidentLevel"/>
+<org.eventb.core.variable name="_Tu-IUTDeEeK1r57p0SSIEg" org.eventb.core.identifier="incidentCapabilityRequirements"/>
+<org.eventb.core.variable name="_Tu-IUjDeEeK1r57p0SSIEg" org.eventb.core.identifier="ambulanceAllocation"/>
+<org.eventb.core.variable name="_Tu-IUzDeEeK1r57p0SSIEg" org.eventb.core.identifier="hospitalAllocation"/>
+<org.eventb.core.variable name="_Tu-vYDDeEeK1r57p0SSIEg" org.eventb.core.comment="reducedResponseCounter to monitor the system state&#10;             (workaround as using card() often causes problems with discharging proof obligations) " org.eventb.core.identifier="reducedResponseCounter"/>
+<org.eventb.core.variable name="_o18iEDDeEeK1r57p0SSIEg" org.eventb.core.comment="THIS REFINED MACHINE IMPLEMENTS THE WARNING AND REPORTING REQUIREMENTS" org.eventb.core.identifier="incidentStatus"/>
+<org.eventb.core.invariant name="_hYWZADDnEeK1r57p0SSIEg" org.eventb.core.label="inv8" org.eventb.core.predicate="reducedResponseCounter ∈ ℕ"/>
+<org.eventb.core.invariant name="_PkC0cDDoEeK1r57p0SSIEg" org.eventb.core.label="inv9" org.eventb.core.predicate="incidentStatus ∈ incident → INCIDENT_STATUS"/>
+<org.eventb.core.invariant name="_o19wMDDeEeK1r57p0SSIEg" org.eventb.core.label="int10" org.eventb.core.predicate="finite(incident)"/>
+<org.eventb.core.invariant name="_jgFbMDDfEeK1r57p0SSIEg" org.eventb.core.label="int11" org.eventb.core.predicate="finite(incidentStatus)"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_hYXAEDDnEeK1r57p0SSIEg" org.eventb.core.assignment="reducedResponseCounter ≔ 0" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="_TvAkkDDeEeK1r57p0SSIEg" org.eventb.core.assignment="incidentStatus ≔ ∅" org.eventb.core.label="act9"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvAkkzDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="logIncident">
+<org.eventb.core.refinesEvent name="_aUx2UDDsEeK1r57p0SSIEg" org.eventb.core.target="logIncident"/>
+<org.eventb.core.action name="_TvBLoTDeEeK1r57p0SSIEg" org.eventb.core.assignment="incidentStatus(i) ≔  Logged" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvBLojDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fullResponseAllocation">
+<org.eventb.core.refinesEvent name="_aUydYDDsEeK1r57p0SSIEg" org.eventb.core.target="allocateAmbulanceToIncident"/>
+<org.eventb.core.guard name="_TvBysTDeEeK1r57p0SSIEg" org.eventb.core.label="grd6" org.eventb.core.predicate="incidentCapabilityRequirements(i) ⊆ ambulanceCapabilities(a)"/>
+<org.eventb.core.action name="_TvByszDeEeK1r57p0SSIEg" org.eventb.core.assignment="incidentStatus(i) ≔ Allocated" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvCZwDDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="reducedResponseAllocation">
+<org.eventb.core.refinesEvent name="_aUzEcDDsEeK1r57p0SSIEg" org.eventb.core.target="allocateAmbulanceToIncident"/>
+<org.eventb.core.guard name="_TvCZwjDeEeK1r57p0SSIEg" org.eventb.core.comment="only enable if there are no ambulances that could provide a full&#10;         response to any of the allocatable incidents " org.eventb.core.label="grd6" org.eventb.core.predicate="∀amb · (amb ∈ ambulance ∖ dom(ambulanceAllocation)&#10;            ⇒ ∀inc · (inc ∈ allocatable&#10;            ⇒ incidentCapabilityRequirements(inc) ⊈ ambulanceCapabilities(amb)))"/>
+<org.eventb.core.action name="_TvDA0TDeEeK1r57p0SSIEg" org.eventb.core.assignment="incidentStatus(i) ≔ Allocated" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_TvDA0jDeEeK1r57p0SSIEg" org.eventb.core.assignment="reducedResponseCounter ≔  reducedResponseCounter + 1" org.eventb.core.comment="increment the reduced response counter" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvDA0zDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="allocateIncidentToHospital">
+<org.eventb.core.refinesEvent name="_aUzrgDDsEeK1r57p0SSIEg" org.eventb.core.target="allocateIncidentToHospital"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvDn4TDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REPORT_IncidentArrival">
+<org.eventb.core.parameter name="_TvDn4jDeEeK1r57p0SSIEg" org.eventb.core.identifier="a"/>
+<org.eventb.core.guard name="_TvDn4zDeEeK1r57p0SSIEg" org.eventb.core.comment="must be an ambulance with an allocated incident" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ dom(ambulanceAllocation)"/>
+<org.eventb.core.guard name="_TvEO8DDeEeK1r57p0SSIEg" org.eventb.core.comment="... that hasn't arrived yet" org.eventb.core.label="grd2" org.eventb.core.predicate="incidentStatus(ambulanceAllocation(a)) = Allocated"/>
+<org.eventb.core.action name="_TvEO8TDeEeK1r57p0SSIEg" org.eventb.core.assignment="incidentStatus(ambulanceAllocation(a)) ≔ Attended" org.eventb.core.comment="register arrival to the scene of the incident" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvEO8jDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REPORT_HospitalArrival">
+<org.eventb.core.parameter name="_TvE2ADDeEeK1r57p0SSIEg" org.eventb.core.identifier="a"/>
+<org.eventb.core.guard name="_TvE2ATDeEeK1r57p0SSIEg" org.eventb.core.comment="must be a currently allocated ambulance" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ dom(ambulanceAllocation)"/>
+<org.eventb.core.guard name="_TvFdEDDeEeK1r57p0SSIEg" org.eventb.core.comment="hospital must be allocated" org.eventb.core.label="grd3" org.eventb.core.predicate="{a}◁(ambulanceAllocation;hospitalAllocation) ≠ ∅"/>
+<org.eventb.core.guard name="_DPD0wDDoEeK1r57p0SSIEg" org.eventb.core.comment="not yet delivered to hospital" org.eventb.core.label="grd4" org.eventb.core.predicate="incidentStatus(ambulanceAllocation(a)) = Attended"/>
+<org.eventb.core.action name="_TvFdEjDeEeK1r57p0SSIEg" org.eventb.core.assignment="incidentStatus(ambulanceAllocation(a)) ≔ Hospitalised" org.eventb.core.comment="@act1&#9;hospitalisedIncident ≔ hospitalisedIncident ∪ {ambulanceAllocation(a)}&#10;         register arrival to the allocated hospital " org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvGEIDDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="REPORT_AmbulanceBackAtBase">
+<org.eventb.core.refinesEvent name="_aU2HwDDsEeK1r57p0SSIEg" org.eventb.core.target="setAmbulanceAvailable"/>
+<org.eventb.core.guard name="_TvGEIjDeEeK1r57p0SSIEg" org.eventb.core.comment="ambulance can only arrive back at its base when it has delivered&#10;         the patient (incident) to the allocated hospital&#10;         Arrival to the base makes the ambulance available for another allocation " org.eventb.core.label="grd3" org.eventb.core.predicate="incidentStatus(ambulanceAllocation(a)) = Hospitalised"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvGrMDDeEeK1r57p0SSIEg" org.eventb.core.comment="enabled when queue threshold reached" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="WARNING_QueueThresholdReached">
+<org.eventb.core.guard name="_TvGrMTDeEeK1r57p0SSIEg" org.eventb.core.label="grd1" org.eventb.core.predicate="card(incidentStatus ▷ {Logged}) ≥ QUEUE_THRESHOLD"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvGrMjDeEeK1r57p0SSIEg" org.eventb.core.comment="enabled when reduced response threshold exceeded" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="WARNING_ReducedResponseThresholdExceeded">
+<org.eventb.core.guard name="_TvHSQDDeEeK1r57p0SSIEg" org.eventb.core.label="grd1" org.eventb.core.predicate="card(incidentStatus ⩥ {Logged}) ∗ REDUCED_RESPONSE_PERCENTAGE_THRESHOLD&#10;            &lt; reducedResponseCounter ∗ 100"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvHSQTDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="addAmbulance">
+<org.eventb.core.refinesEvent name="_aU3V4DDsEeK1r57p0SSIEg" org.eventb.core.target="addAmbulance"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_TvH5UDDeEeK1r57p0SSIEg" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="addHospital">
+<org.eventb.core.refinesEvent name="_aU3V4TDsEeK1r57p0SSIEg" org.eventb.core.target="addHospital"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
