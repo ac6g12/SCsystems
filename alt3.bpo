@@ -95,7 +95,7 @@
 </org.eventb.core.poSequent>
 <org.eventb.core.poSequent name="INITIALISATION/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#EVTALLHYPincidentCapabilityRequirementt"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(BASESTATION×LOCATION))∈(∅ ⦂ ℙ(BASESTATION)) → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(BASESTATION×LOCATION))∈(∅ ⦂ ℙ(BASESTATION)) ↣ LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.event#_o18iEDDeEeK1r57p0SSIEh"/>
 <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
@@ -113,7 +113,7 @@
 </org.eventb.core.poSequent>
 <org.eventb.core.poSequent name="INITIALISATION/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#EVTALLHYPincidentCapabilityRequirementt"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(HOSPITAL×LOCATION))∈(∅ ⦂ ℙ(HOSPITAL)) → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(HOSPITAL×LOCATION))∈(∅ ⦂ ℙ(HOSPITAL)) ↣ LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.event#_o18iEDDeEeK1r57p0SSIEh"/>
 <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
@@ -270,7 +270,8 @@
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="incidentStatus(ambulanceAllocation(a))=Hospitalised" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#_TvGEIDDeEeK1r57p0SSIEg|org.eventb.core.guard#_TvGEIjDeEeK1r57p0SSIEg"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTALLHYPincidentCapabilityRequirement|" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="card(incidentStatus ▷ {Logged})≥QUEUE_THRESHOLD" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#_TvGrMDDeEeK1r57p0SSIEg|org.eventb.core.guard#_TvGrMTDeEeK1r57p0SSIEg"/>
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="finite(incidentStatus ▷ {Logged})" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#_TvGrMDDeEeK1r57p0SSIEg|org.eventb.core.guard#_TvGrMTDeEeK1r57p0SSIEg"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(incidentStatus ▷ {Logged})≥QUEUE_THRESHOLD" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#_TvGrMDDeEeK1r57p0SSIEg|org.eventb.core.guard#_GvLn-TPaEeKy5YgF0Fdp1w"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTALLHYPincidentCapabilityRequirement}" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="card(incidentStatus ⩥ {Logged})∗REDUCED_RESPONSE_PERCENTAGE_THRESHOLD&lt;reducedResponseCounter∗100" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#_TvGrMjDeEeK1r57p0SSIEg|org.eventb.core.guard#_TvHSQDDeEeK1r57p0SSIEg"/>
@@ -305,7 +306,7 @@
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="addHospital/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#EVTALLHYPincidentCapabilityRequiremenu'"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="hospitalLocation{h ↦ loc}∈hospital∪{h} → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="hospitalLocation{h ↦ loc}∈hospital∪{h} ↣ LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/AmbulanceDispatchFinal/alt2.bum|org.eventb.core.machineFile#alt2|org.eventb.core.event#_TvH5UDDeEeK1r57p0SSIEg"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.event#_o18iEDDeEeK1r57p0SSIEs"/>
 <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
@@ -324,7 +325,7 @@
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poSequent name="addBaseStation/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#EVTALLHYPincidentCapabilityRequiremenu("/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="baseLocation{b ↦ l}∈basestation∪{b} → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="baseLocation{b ↦ l}∈basestation∪{b} ↣ LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.event#_4PjZITM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poSequent#addBaseStation\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
@@ -351,9 +352,9 @@
 <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AmbulanceDispatchFinal/alt3.bpo|org.eventb.core.poFile#alt3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="incidentLocation∈incident → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPJzM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="basestation⊆BASESTATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKDM-EeKbDsKAzT_zSA"/>
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="baseLocation∈basestation → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="baseLocation∈basestation ↣ LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKTM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="ambulanceBase∈ambulance → basestation" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKjM-EeKbDsKAzT_zSA"/>
-<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="hospitalLocation∈hospital → LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="hospitalLocation∈hospital ↣ LOCATION" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_4PaPKzM-EeKbDsKAzT_zSA"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="ambulance=dom(ambulanceBase)" org.eventb.core.source="/AmbulanceDispatchFinal/alt3.bum|org.eventb.core.machineFile#alt3|org.eventb.core.invariant#_06YawzNDEeKbDsKAzT_zSA"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

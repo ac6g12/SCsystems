@@ -10371,4 +10371,11 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="WARNING_QueueThresholdReached/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="Logged" org.eventb.core.type="INCIDENT_STATUS"/>
+<org.eventb.core.prIdent name="incidentStatus" org.eventb.core.type="ℙ(INCIDENT×INCIDENT_STATUS)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="finite(incidentStatus ▷ {Logged})"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
 </org.eventb.core.prFile>
