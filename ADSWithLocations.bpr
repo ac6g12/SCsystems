@@ -8528,28 +8528,28 @@
 <org.eventb.core.prProof name="addBaseStation/baseLocationType/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30" org.eventb.core.prSets="AMBULANCE,BASE_STATION,HOSPITAL,INCIDENT,INCIDENT_STATUS,LOCATION,MEDICAL_CAPABILITY">
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p31,p32,p33,p34,p35,p36,p37"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MEDICAL_CAPABILITY,{c1},{c2},{c3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p38,p39,p40,p41"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(HOSPITAL,{h1},{h2},{h3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p42,p43,p44,p45"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
@@ -8559,10 +8559,10 @@
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p115"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with LOCATION={x0,x1,x2,y0,y1,y2,z0,z1,z2}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p75">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p118">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p116"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p116"/>
 <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p117"/>
-<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p9,p24"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p118" org.eventb.core.prHyps="p11,p2,p30,p6,p3,p13,p17,p4,p27,p22,p29,p19,p1,p23,p28,p20,p21,p10,p16,p9,p15,p26,p18,p25,p24,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116,p117">
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p10,p24"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p118" org.eventb.core.prHyps="p12,p3,p30,p7,p4,p14,p18,p5,p27,p2,p29,p20,p1,p23,p28,p21,p22,p11,p17,p10,p16,p26,p19,p25,p24,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116,p117">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -8641,10 +8641,10 @@
 <org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬a2=a8"/>
 <org.eventb.core.prPred name="p82" org.eventb.core.predicate="¬x0=z1"/>
 <org.eventb.core.prPred name="p102" org.eventb.core.predicate="¬y1=y2"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
 <org.eventb.core.prPred name="p84" org.eventb.core.predicate="¬x1=x2"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
 <org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬a3=a5"/>
 <org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬c2=c3"/>
 <org.eventb.core.prPred name="p79" org.eventb.core.predicate="¬x0=y1"/>
@@ -8656,32 +8656,32 @@
 <org.eventb.core.prPred name="p81" org.eventb.core.predicate="¬x0=z0"/>
 <org.eventb.core.prPred name="p78" org.eventb.core.predicate="¬x0=y0"/>
 <org.eventb.core.prPred name="p42" org.eventb.core.predicate="HOSPITAL={h1,h2,h3}"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬a1=a5"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
 <org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬a1=a4"/>
 <org.eventb.core.prPred name="p106" org.eventb.core.predicate="¬y2=z0"/>
 <org.eventb.core.prPred name="p116" org.eventb.core.predicate="baseLocation∈baseStation ↣ {x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
 <org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬a2=a6"/>
 <org.eventb.core.prPred name="p118" org.eventb.core.predicate="baseLocation{b ↦ l}∈baseStation∪{b} ↣ {x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
 <org.eventb.core.prPred name="p74" org.eventb.core.predicate="¬a7=a8"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="baseLocation{b ↦ l}∈baseStation∪{b} ↣ LOCATION"/>
 <org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Allocated=Attended"/>
 <org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬Allocated=Hospitalised"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(incidentStatus)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(incidentStatus)"/>
 <org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬h2=h3"/>
 <org.eventb.core.prPred name="p117" org.eventb.core.predicate="l∈{x0,x1,x2,y0,y1,y2,z0,z1,z2} ∖ ran(baseLocation)"/>
 <org.eventb.core.prPred name="p94" org.eventb.core.predicate="¬x2=z0"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p66" org.eventb.core.predicate="¬a4=a6"/>
 <org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬a3=a4"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p72" org.eventb.core.predicate="¬a6=a7"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
 <org.eventb.core.prPred name="p77" org.eventb.core.predicate="¬x0=x2"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="finite(incident)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="finite(incident)"/>
 <org.eventb.core.prPred name="p64" org.eventb.core.predicate="¬a3=a8"/>
 <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Logged=Allocated"/>
 <org.eventb.core.prPred name="p69" org.eventb.core.predicate="¬a5=a6"/>
@@ -8693,18 +8693,19 @@
 <org.eventb.core.prPred name="p101" org.eventb.core.predicate="¬y0=z2"/>
 <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬c1=c2"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="ambulanceAllocation∈ambulance ⤔ incident"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,y0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,y1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
 <org.eventb.core.prPred name="p110" org.eventb.core.predicate="¬z0=z2"/>
 <org.eventb.core.prPred name="p56" org.eventb.core.predicate="¬a2=a5"/>
 <org.eventb.core.prPred name="p95" org.eventb.core.predicate="¬x2=z1"/>
 <org.eventb.core.prPred name="p98" org.eventb.core.predicate="¬y0=y2"/>
 <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Logged=Hospitalised"/>
 <org.eventb.core.prPred name="p48" org.eventb.core.predicate="¬a1=a3"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(INCIDENT)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(INCIDENT)"/>
 <org.eventb.core.prPred name="p70" org.eventb.core.predicate="¬a5=a7"/>
 <org.eventb.core.prPred name="p73" org.eventb.core.predicate="¬a6=a8"/>
 <org.eventb.core.prPred name="p80" org.eventb.core.predicate="¬x0=y2"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
 <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬c1=c3"/>
 <org.eventb.core.prPred name="p105" org.eventb.core.predicate="¬y1=z2"/>
 <org.eventb.core.prPred name="p104" org.eventb.core.predicate="¬y1=z1"/>
@@ -8730,18 +8731,17 @@
 <org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬a1=a6"/>
 <org.eventb.core.prPred name="p65" org.eventb.core.predicate="¬a4=a5"/>
 <org.eventb.core.prPred name="p96" org.eventb.core.predicate="¬x2=z2"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
 <org.eventb.core.prPred name="p114" org.eventb.core.predicate="hospital⊆HOSPITAL"/>
 <org.eventb.core.prPred name="p75" org.eventb.core.predicate="LOCATION={x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
 <org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬a3=a6"/>
 <org.eventb.core.prPred name="p85" org.eventb.core.predicate="¬x1=y0"/>
 <org.eventb.core.prPred name="p93" org.eventb.core.predicate="¬x2=y2"/>
 <org.eventb.core.prPred name="p111" org.eventb.core.predicate="¬z1=z2"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,x0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,x1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
 <org.eventb.core.prPred name="p23" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
 <org.eventb.core.prPred name="p89" org.eventb.core.predicate="¬x1=z1"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="hospitalLocation∈hospital ↣ LOCATION"/>
@@ -9200,28 +9200,28 @@
 <org.eventb.core.prProof name="addAmbulance/ambulanceBaseType/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30" org.eventb.core.prSets="AMBULANCE,HOSPITAL,INCIDENT,INCIDENT_STATUS,LOCATION,MEDICAL_CAPABILITY">
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p31,p32,p33,p34,p35,p36,p37"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MEDICAL_CAPABILITY,{c1},{c2},{c3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p38,p39,p40,p41"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(HOSPITAL,{h1},{h2},{h3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p42,p43,p44,p45"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
@@ -9231,9 +9231,9 @@
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p115"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with AMBULANCE={a1,a2,a3,a4,a5,a6,a7,a8}" org.eventb.core.prHyps="p46">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p116"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p2,p29,p6,p3,p13,p18,p4,p26,p23,p28,p20,p1,p24,p27,p21,p22,p10,p16,p9,p15,p25,p19,p17,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p116"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12,p3,p29,p7,p4,p14,p19,p5,p26,p2,p28,p21,p1,p24,p27,p22,p23,p11,p17,p10,p16,p25,p20,p18,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -9313,10 +9313,10 @@
 <org.eventb.core.prPred name="p82" org.eventb.core.predicate="¬x0=z1"/>
 <org.eventb.core.prPred name="p102" org.eventb.core.predicate="¬y1=y2"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="ambulanceBase{a ↦ bs}∈ambulance∪{a} → baseStation"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
 <org.eventb.core.prPred name="p84" org.eventb.core.predicate="¬x1=x2"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
 <org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬a3=a5"/>
 <org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬c2=c3"/>
 <org.eventb.core.prPred name="p79" org.eventb.core.predicate="¬x0=y1"/>
@@ -9329,28 +9329,28 @@
 <org.eventb.core.prPred name="p81" org.eventb.core.predicate="¬x0=z0"/>
 <org.eventb.core.prPred name="p78" org.eventb.core.predicate="¬x0=y0"/>
 <org.eventb.core.prPred name="p42" org.eventb.core.predicate="HOSPITAL={h1,h2,h3}"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬a1=a5"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
 <org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬a1=a4"/>
 <org.eventb.core.prPred name="p106" org.eventb.core.predicate="¬y2=z0"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
 <org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬a2=a6"/>
 <org.eventb.core.prPred name="p74" org.eventb.core.predicate="¬a7=a8"/>
 <org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Allocated=Attended"/>
 <org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬Allocated=Hospitalised"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(incidentStatus)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(incidentStatus)"/>
 <org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬h2=h3"/>
 <org.eventb.core.prPred name="p94" org.eventb.core.predicate="¬x2=z0"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p66" org.eventb.core.predicate="¬a4=a6"/>
 <org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬a3=a4"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p72" org.eventb.core.predicate="¬a6=a7"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
 <org.eventb.core.prPred name="p77" org.eventb.core.predicate="¬x0=x2"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="finite(incident)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="finite(incident)"/>
 <org.eventb.core.prPred name="p64" org.eventb.core.predicate="¬a3=a8"/>
 <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Logged=Allocated"/>
 <org.eventb.core.prPred name="p69" org.eventb.core.predicate="¬a5=a6"/>
@@ -9362,18 +9362,19 @@
 <org.eventb.core.prPred name="p101" org.eventb.core.predicate="¬y0=z2"/>
 <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬c1=c2"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="ambulanceAllocation∈ambulance ⤔ incident"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,y0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,y1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
 <org.eventb.core.prPred name="p110" org.eventb.core.predicate="¬z0=z2"/>
 <org.eventb.core.prPred name="p56" org.eventb.core.predicate="¬a2=a5"/>
 <org.eventb.core.prPred name="p95" org.eventb.core.predicate="¬x2=z1"/>
 <org.eventb.core.prPred name="p98" org.eventb.core.predicate="¬y0=y2"/>
 <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Logged=Hospitalised"/>
 <org.eventb.core.prPred name="p48" org.eventb.core.predicate="¬a1=a3"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(INCIDENT)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(INCIDENT)"/>
 <org.eventb.core.prPred name="p70" org.eventb.core.predicate="¬a5=a7"/>
 <org.eventb.core.prPred name="p73" org.eventb.core.predicate="¬a6=a8"/>
 <org.eventb.core.prPred name="p80" org.eventb.core.predicate="¬x0=y2"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
 <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬c1=c3"/>
 <org.eventb.core.prPred name="p105" org.eventb.core.predicate="¬y1=z2"/>
 <org.eventb.core.prPred name="p104" org.eventb.core.predicate="¬y1=z1"/>
@@ -9399,20 +9400,19 @@
 <org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬a1=a6"/>
 <org.eventb.core.prPred name="p65" org.eventb.core.predicate="¬a4=a5"/>
 <org.eventb.core.prPred name="p96" org.eventb.core.predicate="¬x2=z2"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
 <org.eventb.core.prPred name="p114" org.eventb.core.predicate="hospital⊆HOSPITAL"/>
 <org.eventb.core.prPred name="p75" org.eventb.core.predicate="LOCATION={x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="a∈AMBULANCE ∖ ambulance"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="a∈AMBULANCE ∖ ambulance"/>
 <org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬a3=a6"/>
 <org.eventb.core.prPred name="p85" org.eventb.core.predicate="¬x1=y0"/>
 <org.eventb.core.prPred name="p93" org.eventb.core.predicate="¬x2=y2"/>
 <org.eventb.core.prPred name="p111" org.eventb.core.predicate="¬z1=z2"/>
 <org.eventb.core.prPred name="p24" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,x0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,x1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
 <org.eventb.core.prPred name="p89" org.eventb.core.predicate="¬x1=z1"/>
 <org.eventb.core.prPred name="p25" org.eventb.core.predicate="hospitalLocation∈hospital ↣ LOCATION"/>
 <org.eventb.core.prPred name="p116" org.eventb.core.predicate="a∈{a1,a2,a3,a4,a5,a6,a7,a8} ∖ ambulance"/>
@@ -9431,28 +9431,28 @@
 <org.eventb.core.prProof name="addBaseStation/ambulanceBaseType/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30" org.eventb.core.prSets="AMBULANCE,BASE_STATION,HOSPITAL,INCIDENT,INCIDENT_STATUS,LOCATION,MEDICAL_CAPABILITY">
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p31,p32,p33,p34,p35,p36,p37"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MEDICAL_CAPABILITY,{c1},{c2},{c3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p38,p39,p40,p41"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(HOSPITAL,{h1},{h2},{h3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p42,p43,p44,p45"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
@@ -9464,7 +9464,7 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p24" org.eventb.core.prInfHyps="p116"/>
 <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p24"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p2,p30,p6,p3,p13,p17,p4,p27,p22,p29,p19,p1,p23,p28,p20,p21,p10,p16,p9,p15,p26,p18,p25,p24,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12,p3,p30,p7,p4,p14,p18,p5,p27,p2,p29,p20,p1,p23,p28,p21,p22,p11,p17,p10,p16,p26,p19,p25,p24,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -9543,10 +9543,10 @@
 <org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬a2=a8"/>
 <org.eventb.core.prPred name="p82" org.eventb.core.predicate="¬x0=z1"/>
 <org.eventb.core.prPred name="p102" org.eventb.core.predicate="¬y1=y2"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
 <org.eventb.core.prPred name="p84" org.eventb.core.predicate="¬x1=x2"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
 <org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬a3=a5"/>
 <org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬c2=c3"/>
 <org.eventb.core.prPred name="p79" org.eventb.core.predicate="¬x0=y1"/>
@@ -9558,29 +9558,29 @@
 <org.eventb.core.prPred name="p81" org.eventb.core.predicate="¬x0=z0"/>
 <org.eventb.core.prPred name="p78" org.eventb.core.predicate="¬x0=y0"/>
 <org.eventb.core.prPred name="p42" org.eventb.core.predicate="HOSPITAL={h1,h2,h3}"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬a1=a5"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
 <org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬a1=a4"/>
 <org.eventb.core.prPred name="p106" org.eventb.core.predicate="¬y2=z0"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
 <org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬a2=a6"/>
 <org.eventb.core.prPred name="p74" org.eventb.core.predicate="¬a7=a8"/>
 <org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Allocated=Attended"/>
 <org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬Allocated=Hospitalised"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(incidentStatus)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(incidentStatus)"/>
 <org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬h2=h3"/>
 <org.eventb.core.prPred name="p116" org.eventb.core.predicate="l∈{x0,x1,x2,y0,y1,y2,z0,z1,z2} ∖ ran(baseLocation)"/>
 <org.eventb.core.prPred name="p94" org.eventb.core.predicate="¬x2=z0"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p66" org.eventb.core.predicate="¬a4=a6"/>
 <org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬a3=a4"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p72" org.eventb.core.predicate="¬a6=a7"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
 <org.eventb.core.prPred name="p77" org.eventb.core.predicate="¬x0=x2"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="finite(incident)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="finite(incident)"/>
 <org.eventb.core.prPred name="p64" org.eventb.core.predicate="¬a3=a8"/>
 <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Logged=Allocated"/>
 <org.eventb.core.prPred name="p69" org.eventb.core.predicate="¬a5=a6"/>
@@ -9592,18 +9592,19 @@
 <org.eventb.core.prPred name="p101" org.eventb.core.predicate="¬y0=z2"/>
 <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬c1=c2"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="ambulanceAllocation∈ambulance ⤔ incident"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,y0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,y1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
 <org.eventb.core.prPred name="p110" org.eventb.core.predicate="¬z0=z2"/>
 <org.eventb.core.prPred name="p56" org.eventb.core.predicate="¬a2=a5"/>
 <org.eventb.core.prPred name="p95" org.eventb.core.predicate="¬x2=z1"/>
 <org.eventb.core.prPred name="p98" org.eventb.core.predicate="¬y0=y2"/>
 <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Logged=Hospitalised"/>
 <org.eventb.core.prPred name="p48" org.eventb.core.predicate="¬a1=a3"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(INCIDENT)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(INCIDENT)"/>
 <org.eventb.core.prPred name="p70" org.eventb.core.predicate="¬a5=a7"/>
 <org.eventb.core.prPred name="p73" org.eventb.core.predicate="¬a6=a8"/>
 <org.eventb.core.prPred name="p80" org.eventb.core.predicate="¬x0=y2"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
 <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬c1=c3"/>
 <org.eventb.core.prPred name="p105" org.eventb.core.predicate="¬y1=z2"/>
 <org.eventb.core.prPred name="p104" org.eventb.core.predicate="¬y1=z1"/>
@@ -9629,11 +9630,11 @@
 <org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬a1=a6"/>
 <org.eventb.core.prPred name="p65" org.eventb.core.predicate="¬a4=a5"/>
 <org.eventb.core.prPred name="p96" org.eventb.core.predicate="¬x2=z2"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
 <org.eventb.core.prPred name="p114" org.eventb.core.predicate="hospital⊆HOSPITAL"/>
 <org.eventb.core.prPred name="p75" org.eventb.core.predicate="LOCATION={x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
 <org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬a3=a6"/>
@@ -9641,7 +9642,6 @@
 <org.eventb.core.prPred name="p93" org.eventb.core.predicate="¬x2=y2"/>
 <org.eventb.core.prPred name="p111" org.eventb.core.predicate="¬z1=z2"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation∪{b}"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,x0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,x1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
 <org.eventb.core.prPred name="p23" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
 <org.eventb.core.prPred name="p89" org.eventb.core.predicate="¬x1=z1"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="hospitalLocation∈hospital ↣ LOCATION"/>
@@ -10781,28 +10781,28 @@
 <org.eventb.core.prProof name="addAmbulance/ambulanceTypeCheck/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30" org.eventb.core.prSets="AMBULANCE,HOSPITAL,INCIDENT,INCIDENT_STATUS,LOCATION,MEDICAL_CAPABILITY">
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p31,p32,p33,p34,p35,p36,p37"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MEDICAL_CAPABILITY,{c1},{c2},{c3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p38,p39,p40,p41"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(HOSPITAL,{h1},{h2},{h3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p42,p43,p44,p45"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p12" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
@@ -10810,15 +10810,15 @@
 <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p113"/>
 <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p114"/>
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p115"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ambulance=dom(ambulanceBase)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p19">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ambulance=dom(ambulanceBase)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p20">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p117">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p116"/>
-<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p116"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p18"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with AMBULANCE={a1,a2,a3,a4,a5,a6,a7,a8}" org.eventb.core.prHyps="p46">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p116" org.eventb.core.prInfHyps="p118"/>
 <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p116"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p117" org.eventb.core.prHyps="p11,p2,p29,p6,p3,p13,p18,p4,p26,p24,p28,p20,p1,p23,p27,p21,p22,p10,p16,p9,p15,p25,p19,p17,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116,p118">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p117" org.eventb.core.prHyps="p12,p3,p29,p7,p4,p14,p19,p5,p26,p2,p28,p21,p1,p24,p27,p22,p23,p11,p17,p10,p16,p25,p20,p18,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p116,p118">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -10900,10 +10900,10 @@
 <org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬a2=a8"/>
 <org.eventb.core.prPred name="p82" org.eventb.core.predicate="¬x0=z1"/>
 <org.eventb.core.prPred name="p102" org.eventb.core.predicate="¬y1=y2"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
 <org.eventb.core.prPred name="p84" org.eventb.core.predicate="¬x1=x2"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
 <org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬a3=a5"/>
 <org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬c2=c3"/>
 <org.eventb.core.prPred name="p79" org.eventb.core.predicate="¬x0=y1"/>
@@ -10916,29 +10916,29 @@
 <org.eventb.core.prPred name="p81" org.eventb.core.predicate="¬x0=z0"/>
 <org.eventb.core.prPred name="p78" org.eventb.core.predicate="¬x0=y0"/>
 <org.eventb.core.prPred name="p42" org.eventb.core.predicate="HOSPITAL={h1,h2,h3}"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬a1=a5"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
 <org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬a1=a4"/>
 <org.eventb.core.prPred name="p106" org.eventb.core.predicate="¬y2=z0"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
 <org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬a2=a6"/>
 <org.eventb.core.prPred name="p118" org.eventb.core.predicate="a∈{a1,a2,a3,a4,a5,a6,a7,a8} ∖ dom(ambulanceBase)"/>
 <org.eventb.core.prPred name="p74" org.eventb.core.predicate="¬a7=a8"/>
 <org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Allocated=Attended"/>
 <org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬Allocated=Hospitalised"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(incidentStatus)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(incidentStatus)"/>
 <org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬h2=h3"/>
 <org.eventb.core.prPred name="p94" org.eventb.core.predicate="¬x2=z0"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p66" org.eventb.core.predicate="¬a4=a6"/>
 <org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬a3=a4"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p72" org.eventb.core.predicate="¬a6=a7"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
 <org.eventb.core.prPred name="p77" org.eventb.core.predicate="¬x0=x2"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="finite(incident)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="finite(incident)"/>
 <org.eventb.core.prPred name="p64" org.eventb.core.predicate="¬a3=a8"/>
 <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Logged=Allocated"/>
 <org.eventb.core.prPred name="p69" org.eventb.core.predicate="¬a5=a6"/>
@@ -10951,18 +10951,19 @@
 <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬c1=c2"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="ambulanceAllocation∈ambulance ⤔ incident"/>
 <org.eventb.core.prPred name="p116" org.eventb.core.predicate="a∈AMBULANCE ∖ dom(ambulanceBase)"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,y0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,y1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
 <org.eventb.core.prPred name="p110" org.eventb.core.predicate="¬z0=z2"/>
 <org.eventb.core.prPred name="p56" org.eventb.core.predicate="¬a2=a5"/>
 <org.eventb.core.prPred name="p95" org.eventb.core.predicate="¬x2=z1"/>
 <org.eventb.core.prPred name="p98" org.eventb.core.predicate="¬y0=y2"/>
 <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Logged=Hospitalised"/>
 <org.eventb.core.prPred name="p48" org.eventb.core.predicate="¬a1=a3"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(INCIDENT)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="finite(INCIDENT)"/>
 <org.eventb.core.prPred name="p70" org.eventb.core.predicate="¬a5=a7"/>
 <org.eventb.core.prPred name="p73" org.eventb.core.predicate="¬a6=a8"/>
 <org.eventb.core.prPred name="p80" org.eventb.core.predicate="¬x0=y2"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
 <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬c1=c3"/>
 <org.eventb.core.prPred name="p105" org.eventb.core.predicate="¬y1=z2"/>
 <org.eventb.core.prPred name="p104" org.eventb.core.predicate="¬y1=z1"/>
@@ -10989,20 +10990,19 @@
 <org.eventb.core.prPred name="p65" org.eventb.core.predicate="¬a4=a5"/>
 <org.eventb.core.prPred name="p96" org.eventb.core.predicate="¬x2=z2"/>
 <org.eventb.core.prPred name="p117" org.eventb.core.predicate="dom(ambulanceBase)∪{a}=dom(ambulanceBase{a ↦ bs})"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
 <org.eventb.core.prPred name="p114" org.eventb.core.predicate="hospital⊆HOSPITAL"/>
 <org.eventb.core.prPred name="p75" org.eventb.core.predicate="LOCATION={x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="a∈AMBULANCE ∖ ambulance"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="a∈AMBULANCE ∖ ambulance"/>
 <org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬a3=a6"/>
 <org.eventb.core.prPred name="p85" org.eventb.core.predicate="¬x1=y0"/>
 <org.eventb.core.prPred name="p93" org.eventb.core.predicate="¬x2=y2"/>
 <org.eventb.core.prPred name="p111" org.eventb.core.predicate="¬z1=z2"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,x0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,x1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
 <org.eventb.core.prPred name="p89" org.eventb.core.predicate="¬x1=z1"/>
 <org.eventb.core.prPred name="p25" org.eventb.core.predicate="hospitalLocation∈hospital ↣ LOCATION"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="distance∈LOCATION × LOCATION → ℕ"/>
@@ -12647,28 +12647,28 @@
 <org.eventb.core.prProof name="allocateIncidentToHospital/selectClosestHosp/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="hosp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30" org.eventb.core.prSets="AMBULANCE,HOSPITAL,INCIDENT,INCIDENT_STATUS,LOCATION,MEDICAL_CAPABILITY">
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p31,p32,p33,p34,p35,p36,p37"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p31,p32,p33,p34,p35,p36,p37"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MEDICAL_CAPABILITY,{c1},{c2},{c3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p16" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p38,p39,p40,p41"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p38,p39,p40,p41"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(HOSPITAL,{h1},{h2},{h3}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p42,p43,p44,p45"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p42,p43,p44,p45"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2}))" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
 <org.eventb.core.prHypAction name="SELECT2" org.eventb.core.prHyps="p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
@@ -12683,17 +12683,17 @@
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p118" org.eventb.core.prHyps="p117">
 <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p118" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p119">
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p119" org.eventb.core.prHyps="p13,p3,p30,p7,p4,p15,p19,p5,p27,p25,p29,p21,p2,p23,p28,p22,p24,p12,p18,p11,p17,p26,p20,p1,p10,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p117">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p119" org.eventb.core.prHyps="p14,p4,p30,p8,p5,p16,p20,p6,p27,p3,p29,p22,p2,p24,p28,p23,p25,p12,p19,p13,p18,p26,p21,p1,p11,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,p94,p95,p96,p97,p98,p99,p100,p101,p102,p103,p104,p105,p106,p107,p108,p109,p110,p111,p117">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p120">
-<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p120" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p120" org.eventb.core.prHyps="p19"/>
 </org.eventb.core.prAnte>
 <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p121">
 <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p121" org.eventb.core.prHyps="p26">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
-<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p11"/>
 </org.eventb.core.prAnte>
 <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
@@ -12705,7 +12705,7 @@
 <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p123">
 <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for hospitalLocation(h)" org.eventb.core.prGoal="p123" org.eventb.core.prHyps="p26">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p123" org.eventb.core.prHyps="p124">
-<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for incidentLocation(i)" org.eventb.core.prGoal="p123" org.eventb.core.prHyps="p18">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for incidentLocation(i)" org.eventb.core.prGoal="p123" org.eventb.core.prHyps="p19">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p123" org.eventb.core.prHyps="p125">
 <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p123" org.eventb.core.prHyps="p27">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p126">
@@ -12742,7 +12742,7 @@
 <org.eventb.core.prAnte name="." org.eventb.core.prGoal="p130">
 <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for hospitalLocation(hosp)" org.eventb.core.prGoal="p130" org.eventb.core.prHyps="p26">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p130" org.eventb.core.prHyps="p131">
-<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for incidentLocation(i)" org.eventb.core.prGoal="p130" org.eventb.core.prHyps="p18">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for incidentLocation(i)" org.eventb.core.prGoal="p130" org.eventb.core.prHyps="p19">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p130" org.eventb.core.prHyps="p125">
 <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p130" org.eventb.core.prHyps="p27">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p132">
@@ -12844,16 +12844,16 @@
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p44" org.eventb.core.predicate="¬h1=h3"/>
 <org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬a2=a8"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="h∈hospital"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="h∈hospital"/>
 <org.eventb.core.prPred name="p82" org.eventb.core.predicate="¬x0=z1"/>
 <org.eventb.core.prPred name="p102" org.eventb.core.predicate="¬y1=y2"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="partition(MEDICAL_CAPABILITY,{c1},{c2},{c3})"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="incidentLocation∈incident → LOCATION"/>
 <org.eventb.core.prPred name="p84" org.eventb.core.predicate="¬x1=x2"/>
 <org.eventb.core.prPred name="p132" org.eventb.core.predicate="incidentLocation(i) ↦ hospitalLocation(hosp)∈LOCATION × LOCATION">
 <org.eventb.core.prIdent name="hosp" org.eventb.core.type="HOSPITAL"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="ambulance=dom(ambulanceBase)"/>
 <org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬a3=a5"/>
 <org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬c2=c3"/>
 <org.eventb.core.prPred name="p79" org.eventb.core.predicate="¬x0=y1"/>
@@ -12876,13 +12876,13 @@
 <org.eventb.core.prPred name="p125" org.eventb.core.predicate="incidentLocation(i)∈LOCATION"/>
 <org.eventb.core.prPred name="p78" org.eventb.core.predicate="¬x0=y0"/>
 <org.eventb.core.prPred name="p42" org.eventb.core.predicate="HOSPITAL={h1,h2,h3}"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="finite(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬a1=a5"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ambulanceCapabilities={a1 ↦ {c1,c2},a2 ↦ {c2,c3},a3 ↦ {c3},a4 ↦ {c1,c2,c3},a5 ↦ {c1,c3},a6 ↦ {c1,c2,c3},a7 ↦ {c1,c2},a8 ↦ {c3}}"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="partition(LOCATION,{x0},{x1},{x2},{y0},{y1},{y2},{z0},{z1},{z2})"/>
 <org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬a1=a4"/>
 <org.eventb.core.prPred name="p106" org.eventb.core.predicate="¬y2=z0"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="REDUCED_RESPONSE_PERCENTAGE_THRESHOLD=30"/>
 <org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬a2=a6"/>
 <org.eventb.core.prPred name="p74" org.eventb.core.predicate="¬a7=a8"/>
 <org.eventb.core.prPred name="p120" org.eventb.core.predicate="incidentLocation∈INCIDENT ⇸ LOCATION"/>
@@ -12891,15 +12891,15 @@
 <org.eventb.core.prPred name="p12" org.eventb.core.predicate="finite(incidentStatus)"/>
 <org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬h2=h3"/>
 <org.eventb.core.prPred name="p94" org.eventb.core.predicate="¬x2=z0"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="ambulanceCapabilities∈AMBULANCE → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p66" org.eventb.core.predicate="¬a4=a6"/>
 <org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬a3=a4"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="incidentCapabilityRequirements∈incident → ℙ1(MEDICAL_CAPABILITY)"/>
 <org.eventb.core.prPred name="p72" org.eventb.core.predicate="¬a6=a7"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="incidentStatus∈incident → INCIDENT_STATUS"/>
 <org.eventb.core.prPred name="p77" org.eventb.core.predicate="¬x0=x2"/>
 <org.eventb.core.prPred name="p123" org.eventb.core.predicate="incidentLocation(i) ↦ hospitalLocation(h)∈dom(distance)"/>
-<org.eventb.core.prPred name="p24" org.eventb.core.predicate="finite(incident)"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="finite(incident)"/>
 <org.eventb.core.prPred name="p64" org.eventb.core.predicate="¬a3=a8"/>
 <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Logged=Allocated"/>
 <org.eventb.core.prPred name="p69" org.eventb.core.predicate="¬a5=a6"/>
@@ -12914,7 +12914,8 @@
 <org.eventb.core.prPred name="p101" org.eventb.core.predicate="¬y0=z2"/>
 <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬c1=c2"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="ambulanceAllocation∈ambulance ⤔ incident"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,y0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,y1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="MIN_REDUCED_RESPONSE_CAPABILITIES=60"/>
 <org.eventb.core.prPred name="p128" org.eventb.core.predicate="distance∈LOCATION × LOCATION ⇸ ℤ"/>
 <org.eventb.core.prPred name="p110" org.eventb.core.predicate="¬z0=z2"/>
 <org.eventb.core.prPred name="p56" org.eventb.core.predicate="¬a2=a5"/>
@@ -12923,12 +12924,12 @@
 <org.eventb.core.prPred name="p98" org.eventb.core.predicate="¬y0=y2"/>
 <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Logged=Hospitalised"/>
 <org.eventb.core.prPred name="p48" org.eventb.core.predicate="¬a1=a3"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="finite(INCIDENT)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="finite(INCIDENT)"/>
 <org.eventb.core.prPred name="p70" org.eventb.core.predicate="¬a5=a7"/>
 <org.eventb.core.prPred name="p73" org.eventb.core.predicate="¬a6=a8"/>
 <org.eventb.core.prPred name="p80" org.eventb.core.predicate="¬x0=y2"/>
 <org.eventb.core.prPred name="p126" org.eventb.core.predicate="incidentLocation(i) ↦ hospitalLocation(h)∈LOCATION × LOCATION"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="ambulanceBase∈ambulance → baseStation"/>
 <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬c1=c3"/>
 <org.eventb.core.prPred name="p105" org.eventb.core.predicate="¬y1=z2"/>
 <org.eventb.core.prPred name="p104" org.eventb.core.predicate="¬y1=z1"/>
@@ -12956,11 +12957,11 @@
 <org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬a1=a6"/>
 <org.eventb.core.prPred name="p65" org.eventb.core.predicate="¬a4=a5"/>
 <org.eventb.core.prPred name="p96" org.eventb.core.predicate="¬x2=z2"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="baseLocation∈baseStation ↣ LOCATION"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="EMERGENCY_LEVEL=1 ‥ 5"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="partition(AMBULANCE,{a1},{a2},{a3},{a4},{a5},{a6},{a7},{a8})"/>
 <org.eventb.core.prPred name="p114" org.eventb.core.predicate="hospital⊆HOSPITAL"/>
 <org.eventb.core.prPred name="p75" org.eventb.core.predicate="LOCATION={x0,x1,x2,y0,y1,y2,z0,z1,z2}"/>
 <org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬a3=a6"/>
@@ -12973,8 +12974,7 @@
 <org.eventb.core.prIdent name="hosp" org.eventb.core.type="HOSPITAL"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p111" org.eventb.core.predicate="¬z1=z2"/>
-<org.eventb.core.prPred name="p25" org.eventb.core.predicate="distance={x0 ↦ x0 ↦ 0,x0 ↦ x1 ↦ 2,x0 ↦ x2 ↦ 4,x0 ↦ y0 ↦ 2,x0 ↦ y1 ↦ 3,x0 ↦ y2 ↦ 5,x0 ↦ z0 ↦ 4,x0 ↦ z1 ↦ 5,x0 ↦ z2 ↦ 6,x1 ↦ x0 ↦ 2,x1 ↦ x1 ↦ 0,x1 ↦ x2 ↦ 2,x1 ↦ y0 ↦ 3,x1 ↦ y1 ↦ 2,x1 ↦ y2 ↦ 3,x1 ↦ z0 ↦ 5,x1 ↦ z1 ↦ 4,x1 ↦ z2 ↦ 5,x2 ↦ x0 ↦ 4,x2 ↦ x1 ↦ 2,x2 ↦ x2 ↦ 0,x2 ↦ y0 ↦ 5,x2 ↦ y1 ↦ 3,x2 ↦ y2 ↦ 2,x2 ↦ z0 ↦ 6,x2 ↦ z1 ↦ 5,x2 ↦ z2 ↦ 4,y0 ↦ x0 ↦ 2,y0 ↦ x1 ↦ 3,y0 ↦ x2 ↦ 5,y0 ↦ y0 ↦ 0,y0 ↦ y1 ↦ 2,y0 ↦ y2 ↦ 4,y0 ↦ z0 ↦ 2,y0 ↦ z1 ↦ 3,x0 ↦ z2 ↦ 5,y1 ↦ x0 ↦ 3,y1 ↦ x1 ↦ 2,y1 ↦ x2 ↦ 3,y1 ↦ y0 ↦ 2,y1 ↦ y1 ↦ 0,y1 ↦ y2 ↦ 2,x1 ↦ z0 ↦ 3,y1 ↦ z1 ↦ 2,y1 ↦ z2 ↦ 3,y2 ↦ x0 ↦ 5,y2 ↦ x1 ↦ 3,y2 ↦ x2 ↦ 2,y2 ↦ y0 ↦ 4,y2 ↦ y1 ↦ 2,y2 ↦ y2 ↦ 0,y2 ↦ z0 ↦ 5,y2 ↦ z1 ↦ 3,y2 ↦ z2 ↦ 2,z0 ↦ x0 ↦ 4,z0 ↦ x1 ↦ 5,z0 ↦ x2 ↦ 6,z0 ↦ y0 ↦ 2,z0 ↦ y1 ↦ 3,z0 ↦ y2 ↦ 5,z0 ↦ z0 ↦ 0,z0 ↦ z1 ↦ 2,z0 ↦ z2 ↦ 4,z1 ↦ x0 ↦ 5,z1 ↦ x1 ↦ 4,z1 ↦ x2 ↦ 5,z1 ↦ y0 ↦ 3,z1 ↦ y1 ↦ 2,z1 ↦ y2 ↦ 3,z1 ↦ z0 ↦ 2,z1 ↦ z1 ↦ 0,z1 ↦ z2 ↦ 2,z2 ↦ x0 ↦ 6,z2 ↦ x1 ↦ 5,z2 ↦ x2 ↦ 4,z2 ↦ y0 ↦ 5,z2 ↦ y1 ↦ 3,z2 ↦ y2 ↦ 2,z2 ↦ z0 ↦ 4,z2 ↦ z1 ↦ 2,z2 ↦ z2 ↦ 0}"/>
-<org.eventb.core.prPred name="p23" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="hospitalAllocation∈incident ⇸ hospital"/>
 <org.eventb.core.prPred name="p89" org.eventb.core.predicate="¬x1=z1"/>
 <org.eventb.core.prPred name="p26" org.eventb.core.predicate="hospitalLocation∈hospital ↣ LOCATION"/>
 <org.eventb.core.prPred name="p27" org.eventb.core.predicate="distance∈LOCATION × LOCATION → ℕ"/>
