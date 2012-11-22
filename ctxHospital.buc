@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353366239270" org.eventb.texttools.text_representation="context ctxHospital extends ctx&#10;constants h1 h2 h3&#10;axioms&#10;&#9;@amxh1&#9;partition(HOSPITAL,{h1},{h2},{h3})  // enum of hospitals&#10;end&#10;" version="3">
-<org.eventb.core.extendsContext name="_BSy8cDKVEeK15q5Rb42jMQ" org.eventb.core.target="ctxADS"/>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1353617542251" org.eventb.texttools.text_representation="context ctxHospital extends ctxADS&#10;&#10;constants h1 h2 h3&#10;&#10;axioms&#10;  @amxh1 partition(HOSPITAL,{h1},{h2},{h3}) // pedefined hospitals&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_IW5_kDTeEeKRD5tJLOLTpw" org.eventb.core.target="ctxADS"/>
 <org.eventb.core.constant name="_e_2AsTAPEeKxl_72wEg6Ag" org.eventb.core.identifier="h1"/>
 <org.eventb.core.constant name="_e_2AsjAPEeKxl_72wEg6Ag" org.eventb.core.identifier="h2"/>
 <org.eventb.core.constant name="_e_2AszAPEeKxl_72wEg6Ag" org.eventb.core.identifier="h3"/>
-<org.eventb.core.axiom name="_e_2AtjAPEeKxl_72wEg6Ag" org.eventb.core.comment="enum of hospitals" org.eventb.core.label="amxh1" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
+<org.eventb.core.axiom name="_e_2AtjAPEeKxl_72wEg6Ag" org.eventb.core.comment="pedefined hospitals" org.eventb.core.label="amxh1" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})"/>
 </org.eventb.core.contextFile>
