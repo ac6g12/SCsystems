@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/incidentLocationType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/baseLocationType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/ambulanceBaseType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/hospitalLocationType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/ambulanceTypeCheck/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="logIncident/incidentLocationType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="fullResponseAllocation/filterFullResponce/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="20" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="reducedResponseAllocation/filterReducedResponce/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="21" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="allocateIncidentToHospital/selectClosestHosp/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addAmbulance/ambulanceBaseType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addAmbulance/ambulanceTypeCheck/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addHospital/hospitalLocationType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addBaseStation/baseLocationType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="addBaseStation/ambulanceBaseType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/incidentLocationType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/baseLocationType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/ambulanceBaseType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/hospitalLocationType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/ambulanceTypeCheck/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="logIncident/incidentLocationType/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fullResponseAllocation/filterFullResponce/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="reducedResponseAllocation/filterReducedResponce/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="allocateIncidentToHospital/selectClosestHosp/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="addAmbulance/ambulanceBaseType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="addAmbulance/ambulanceTypeCheck/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="addHospital/hospitalLocationType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="addBaseStation/baseLocationType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="addBaseStation/ambulanceBaseType/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
