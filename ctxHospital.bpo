@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="AMBULANCE" org.eventb.core.type="ℙ(AMBULANCE)"/>
 <org.eventb.core.poIdentifier name="HOSPITAL" org.eventb.core.type="ℙ(HOSPITAL)"/>
 <org.eventb.core.poIdentifier name="INCIDENT" org.eventb.core.type="ℙ(INCIDENT)"/>
@@ -23,7 +23,7 @@
 <org.eventb.core.poIdentifier name="h2" org.eventb.core.type="HOSPITAL"/>
 <org.eventb.core.poIdentifier name="h3" org.eventb.core.type="HOSPITAL"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AmbulanceDispatch/ctxHospital.bpo|org.eventb.core.poFile#ctxHospital|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AmbulanceDispatch/ctxHospital.bpo|org.eventb.core.poFile#ctxHospital|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(HOSPITAL,{h1},{h2},{h3})" org.eventb.core.source="/AmbulanceDispatch/ctxHospital.buc|org.eventb.core.contextFile#ctxHospital|org.eventb.core.axiom#_e_2AtjAPEeKxl_72wEg6Ag"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
