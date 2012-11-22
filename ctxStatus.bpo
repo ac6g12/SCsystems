@@ -7,7 +7,7 @@
 <org.eventb.core.poIdentifier name="Hospitalised" org.eventb.core.type="INCIDENT_STATUS"/>
 <org.eventb.core.poIdentifier name="Logged" org.eventb.core.type="INCIDENT_STATUS"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AmbulanceDispatch/ctxStatus.bpo|org.eventb.core.poFile#ctxStatus|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})" org.eventb.core.source="/AmbulanceDispatch/ctxStatus.buc|org.eventb.core.contextFile#ctxStatus|org.eventb.core.axiom#_Qk1HkjDeEeK1r57p0SSIEg"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/AmbulanceDispatchFinal/ctxStatus.bpo|org.eventb.core.poFile#ctxStatus|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(INCIDENT_STATUS,{Logged},{Allocated},{Attended},{Hospitalised})" org.eventb.core.source="/AmbulanceDispatchFinal/ctxStatus.buc|org.eventb.core.contextFile#ctxStatus|org.eventb.core.axiom#_Qk1HkjDeEeK1r57p0SSIEg"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
