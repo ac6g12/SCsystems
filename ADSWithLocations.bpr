@@ -7285,4 +7285,20 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/incidentLocationType/INV"/>
+<org.eventb.core.prProof name="logIncident/incidentLocationType/INV"/>
+<org.eventb.core.prProof name="INITIALISATION/baseLocationType/INV"/>
+<org.eventb.core.prProof name="addBaseStation/baseLocationType/INV"/>
+<org.eventb.core.prProof name="INITIALISATION/ambulanceBaseType/INV"/>
+<org.eventb.core.prProof name="addAmbulance/ambulanceBaseType/INV"/>
+<org.eventb.core.prProof name="addBaseStation/ambulanceBaseType/INV"/>
+<org.eventb.core.prProof name="INITIALISATION/hospitalLocationType/INV"/>
+<org.eventb.core.prProof name="addHospital/hospitalLocationType/INV"/>
+<org.eventb.core.prProof name="INITIALISATION/ambulanceType/INV"/>
+<org.eventb.core.prProof name="addAmbulance/ambulanceType/INV"/>
+<org.eventb.core.prProof name="INITIALISATION/ambulanceTypeCheck/INV"/>
+<org.eventb.core.prProof name="addAmbulance/ambulanceTypeCheck/INV"/>
+<org.eventb.core.prProof name="fullResponseAllocation/filterFullResponce/WD"/>
+<org.eventb.core.prProof name="reducedResponseAllocation/filterReducedResponce/WD"/>
+<org.eventb.core.prProof name="allocateIncidentToHospital/selectClosestHosp/WD"/>
 </org.eventb.core.prFile>

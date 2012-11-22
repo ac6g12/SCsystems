@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/counterType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/incidentStatusType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/proofChecks1/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/proofChecks2/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="logIncident/incidentStatusType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="logIncident/proofChecks1/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="logIncident/proofChecks2/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fullResponseAllocation/checkCapabilities/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fullResponseAllocation/incidentStatusType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fullResponseAllocation/proofChecks2/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="reducedResponseAllocation/checkReducedResponce/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="reducedResponseAllocation/counterType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="reducedResponseAllocation/incidentStatusType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="reducedResponseAllocation/proofChecks2/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_IncidentArrival/checkStatus/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_IncidentArrival/incidentStatusType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_IncidentArrival/proofChecks2/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_IncidentArrival/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_HospitalArrival/checkStatus/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_HospitalArrival/incidentStatusType/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_HospitalArrival/proofChecks2/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_HospitalArrival/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="REPORT_AmbulanceBackAtBase/checkStatus/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="WARNING_QueueThresholdReached/checkThreashold/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="WARNING_ReducedResponseThresholdExceeded/checkReducedResponce/WD" org.eventb.core.confidence="-99" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>
